@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+}
+
+section{
+    height: 100vh;
+    width: 100vw;
+
+    display: grid;
+    grid-template-areas: 
+        "um um dois dois"
+        "tres tres tres tres"
+        "quatro cinco cinco seis";
+    grid-template-rows: 50vh 16.5vh 33.5vh;
+    grid-template-columns: 25vw 25vw 25vw 25vw;
+}
+
+#coluna1_1{
+    grid-area: um;
+    background-color: #FF0000;
+}
+
+#coluna1_2{
+    grid-area: dois;
+    background-color: #00E0FF;
+}
+
+#coluna2{
+    grid-area: tres;
+    background-color: #FFE600;
+}
+
+#coluna3_1{
+    grid-area: quatro;
+    background-color: #05FF00;
+}
+
+#coluna3_2{
+    grid-area: cinco;
+    background-color: #000AFF;
+}
+
+#coluna3_3{
+    grid-area: seis;
+    background-color: #05FF00;
+}
