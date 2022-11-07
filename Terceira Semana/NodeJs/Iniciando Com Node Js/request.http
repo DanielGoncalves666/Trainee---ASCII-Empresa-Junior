@@ -1,0 +1,33 @@
+POST http://localhost:4002/products
+content-Type: application/json
+
+{
+    "name": "Caderno Lilás",
+    "price": 3
+}
+
+###
+
+GET http://localhost:4002/products
+
+
+###
+
+GET http://localhost:4002/products/2264843e-fe2c-452f-a3c1-688234b11a0d
+
+
+####
+
+// sempre mudar os ID's
+
+PUT http://localhost:4002/products/b7144036-cf25-4174-989e-fc824e729de6
+content-Type: application/json
+
+{
+    "name": "Bola azul",
+    "price": 5
+}
+
+###
+
+DELETE http://localhost:4002/products/599ef152-4a22-4168-a0d4-9ac72d8b8b2d
