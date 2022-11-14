@@ -1,0 +1,16 @@
+
+button{
+    display: flex;
+    gap: .4rem;
+    justify-content: center;
+    align-items: center;
+
+    background-color: blue;
+
+    line-height: 0; /*Para alinhar com mais perfeição*/
+}
+
+button img{
+    width: 2rem;
+    height: 2rem;
+}

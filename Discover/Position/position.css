@@ -1,0 +1,32 @@
+section{
+    position: relative;
+    top: 0px;
+}
+
+.box{
+    width: 200px;
+    height: 200px;
+    margin-bottom: 32px;
+}
+
+.box1{
+    background-color: green;
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    z-index: 1;
+}
+
+.box2{
+    background-color: red;
+    position: absolute;
+    top: 30px;
+    left: 30px;
+}
+
+.box3{
+    background-color: blue;
+    position: absolute;
+    top: 45px;
+    left: 45px;
+}

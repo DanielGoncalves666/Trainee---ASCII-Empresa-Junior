@@ -1,0 +1,34 @@
+body{
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+}
+
+.box{
+    width: 200px;
+    height: 200px;
+
+    box-sizing: border-box;
+    border-width: 5px;
+    border-color: black;
+    border-style: solid;
+}
+
+.box1{
+    background-color: green;
+}
+
+.box2{
+    background-color: red;
+}
+
+.box3{
+    background-color: blue;
+}

@@ -1,4 +1,5 @@
 const { response } = require("express");
+const cors = require('cors');
 const express = require("express");
 // estamos importando o express dentro da variável de mesmo nome
 const { uuid, isUuid } = require("uuidv4");
@@ -6,6 +7,7 @@ const { uuid, isUuid } = require("uuidv4");
 
 const app = express();
 
+app.use(cors());
 // por padrão o express não interpreta o que a gente vai mandar pra ele por meio de JSON. Podemos falar pra api que vamos receber json assim:
 app.use(express.json());
 

@@ -1,0 +1,44 @@
+Git - Software de versionamento de código, criado por Linux Torvalds.
+	Sistema distribuído.
+
+GitHub serve para hostear repositórios remotos.
+
+SHA1 - algoritmo de encriptação 
+	Cada commit apresenta uma chave de 40 símbolos.
+	
+openssl sha1 nomeArquivo
+	gera o SHA1 referente ao arquivo
+	Mudanças no arquivo gerarão sha1 distintos.
+	
+===== Objetos Internos do Git =====
+
+Blobs
+	Arquivos ficam guardados dentro. (sha1 deles)
+	Contém metadados do git.
+	Não guarda o nome do arquivo.
+
+Trees
+	Armazenam blobs.
+	Armazenam o nome do arquivo.
+	Objeto recursivo.
+
+Commits
+	Armazenam Trees.
+	Aponta para um commit parente.
+	Autor
+	Mensagem.
+	
+Alterações em um arquivo geram mudanças no sha1 no blobs, que por sua vez gera mudanças na tree e então no commit.
+
+===================================== 
+Untracked --> arquivo não está sendo rastreado pelo git ainda.
+	git add nomeArquivo coloca o arquivo no staged area e inicia o rastreamento
+Unmodified --> arquivo rastreado mas que não foi modificado. Esse arquivo foi commitado anteriormente.
+Modified --> arquivo unmodified que sofreu alteração e não foi adiciona à staged area
+Staged --> arquivo foi adicionado na staged area, onde indica os arquivos e as alterações que irão compor o próximo commit.
+	Quando o commit é realizado, todos os arquivo da staged area ficam no estado unmodified.
+	
+============= Merge e resolução de conflitos =============
+
+Alterações na mesma linha (local e código obtido por pull).
+	Necessário resolver manualmente e realizar um merge.

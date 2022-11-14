@@ -1,0 +1,41 @@
+body{
+    display: grid;
+    height: 100vh;
+    margin: 0;
+
+    grid-template-areas: 
+        "topo topo"
+        "principal lado"
+        "rodape rodape";
+
+    grid-template-rows: 150px 1fr 75px;
+    grid-template-columns: 1fr 300px;
+}
+
+header{
+    grid-area: topo;
+    background-color: green;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 0 16px;
+}
+
+main{
+    grid-area: principal;
+    background-color: red;
+
+}
+
+aside{
+    grid-area: lado;
+    background-color: blue;
+
+}
+
+footer{
+    grid-area: rodape;
+    background-color: gray;
+}

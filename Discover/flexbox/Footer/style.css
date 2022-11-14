@@ -1,0 +1,21 @@
+*{
+    margin: 0px;
+}
+
+body{
+    min-height: 100vh;
+
+    display: flex;
+    align-items: flex-end;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 8rem;
+    /* flex-basis: 100vw; */
+    flex-grow: 1;
+    background-color: lightgray; 
+}
